@@ -27,13 +27,13 @@ def result(country, variety, aroma, aftertaste, acidity, body, balance, moisture
         return jsonify(message = 'No es un cafe de primera'), 200
 
 
-
 #@app.route('/url_variables/<string:name>/<int:age>')
 #def url_variables(name, age):
 #    if age < 18:
 #        return jsonify(message='Lo siento ' + name + ' no estas autorizado'), 401
 #    else:
 #        return jsonify(message = ' Bienvenido ' + name ), 200
+
 
 if __name__ == '__main__':
     app.run(debug=True, host='127.0.0.1', port=5000)
