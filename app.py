@@ -22,9 +22,9 @@ def result(country, variety, aroma, aftertaste, acidity, body, balance, moisture
     result = loaded_model.predict(posted)
     test_result = result.tolist()[0]
     if test_result == 'Yes':
-        return jsonify(message = 'Si es un cafe de primera'), 200
+        return jsonify(message = 'Si es un café de especialidad'), 200
     else:
-        return jsonify(message = 'No es un cafe de primera'), 200
+        return jsonify(message = 'No es un café de especialidad'), 200
 
 
 #@app.route('/url_variables/<string:name>/<int:age>')
