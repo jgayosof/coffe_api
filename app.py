@@ -1,7 +1,7 @@
-from flask import Flask, render_template, jsonify, request
 import pickle
 import pandas as pd
 import numpy as np
+from flask import Flask, render_template, jsonify
 
 app = Flask(__name__) # hace referencia al nombre del archivo
 
